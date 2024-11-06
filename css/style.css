@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+.skills {
+    width: 50%;
+    padding: 5%;
+}
+
+.faq {
+    padding: 5%;
+    width: 50%;
+    margin: auto;
+}
+
+p {
+    margin-bottom: 10px;
+    width: 75%;
+    padding: 10px 35px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: 350;
+    font-size: 20px;
+}
+
+.contenedor_principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.acordeon_titulo {
+    display: flex;
+    gap: 10px;
+}
+
+.acordeon_contenido2 {
+    display: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+    background-color: #2838EF;
+    border-radius: 4px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.acordeon_titulo.active .icon::before {
+    content: "-";
+}
+
+.acordeon_titulo .icon::before {
+    content: "+";
+}
+
+.skill {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: bold;
+}
+
+.skill-percentage {
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 2px;
+    background-color: #f3f3f3;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.active{
+    color: #2838EF;
+}
+
+.verde {
+    width: 0;
+    background-color: #3CC985;
+}
+
+.rosa {
+    width: 0;
+    background-color: deeppink;
+}
+
+.amarrillo {
+    width: 0;
+    background-color: gold;
+}
+
+.azul {
+    width: 0;
+    background-color: blue;
+}
